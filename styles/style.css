@@ -93,6 +93,64 @@ button {
 .banner > img {
   width: 100%;
 }
+
+/* ----------------------------------------- Main Section ------------------------------------------- */
+.main_section {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+}
+.feature_section {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 73px;
+  margin-bottom: 130px;
+}
+
+.img_container {
+  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.img_container > img {
+  width: 100%;
+}
+
+.features {
+  flex: 1;
+}
+
+.first {
+  color: #727272;
+  font-size: 45px;
+  font-weight: 500;
+}
+
+.second,
+.third {
+  color: #131313;
+  font-size: 45px;
+  font-weight: 700;
+}
+
+.third {
+  color: #ff900e;
+}
+
+.features > h3 {
+  margin-bottom: 24px;
+}
+
+.features > p {
+  margin-bottom: 32px;
+}
+
 /* !----------------------------------------------- SMALL -------------------------------- */
 @media screen and (max-width: 576px) {
   button {
@@ -119,6 +177,25 @@ button {
 
   .head_line > h2 {
     font-size: 50px;
+  }
+
+  /* ----------------------------------MAIN */
+
+  /* --------------- Feature */
+  .feature_section {
+    width: 90%;
+    flex-direction: column;
+    margin-bottom: 100px;
+  }
+
+  .img_container {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+  }
+  .first,
+  .second,
+  .third {
+    font-size: 23px;
   }
 }
 /* !----------------------------------------------- Medium -------------------------------- */
