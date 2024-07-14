@@ -1,0 +1,173 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Work Sans", sans-serif;
+}
+
+/* ---- Shared --- */
+p {
+  color: #727272;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+}
+
+button {
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 600;
+  background-color: #ff900e;
+  border: none;
+  border-radius: 8px;
+  padding: 20px 24px;
+}
+/* ----------------- Header Section ------------------------ */
+.header_section {
+  padding: 50px 0;
+  background-color: #ff900e1a;
+  margin-bottom: 85px;
+}
+
+.head_container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+/* ---------------------------- Navbar  */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 116px;
+  /* padding: 0 20px; */
+}
+
+.navbar > div > h3 {
+  color: #131313;
+  font-size: 45px;
+  font-weight: 700;
+}
+
+.navbar > div > nav > ul {
+  display: flex;
+  list-style: none;
+  color: #424242;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 26px;
+  width: 477px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* ------------------------------ Heading  */
+.heading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.head_line {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 65%;
+  margin-bottom: 50px;
+}
+
+.head_line > h2 {
+  color: #131313;
+  font-size: 64px;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.head_line > p {
+  margin-bottom: 32px;
+}
+
+.banner > img {
+  width: 100%;
+}
+/* !----------------------------------------------- SMALL -------------------------------- */
+@media screen and (max-width: 576px) {
+  button {
+    font-size: 16px;
+    padding: 15px 20px;
+  }
+
+  /* ---------------------- Navbar  */
+  .navbar {
+    margin-bottom: 80px;
+  }
+
+  .navbar > div > h3 {
+    font-size: 30px;
+  }
+
+  .navbar > div > nav > ul {
+    display: none;
+  }
+
+  .head_line {
+    width: 100%;
+  }
+
+  .head_line > h2 {
+    font-size: 50px;
+  }
+}
+/* !----------------------------------------------- Medium -------------------------------- */
+
+@media screen and (min-width: 577px) and (max-width: 767px) {
+  /* ----------------- Navbar  */
+  .navbar {
+    margin-bottom: 80px;
+  }
+
+  .navbar > div > h3 {
+    font-size: 35px;
+  }
+
+  .navbar > div > nav > ul {
+    display: none;
+  }
+
+  .head_line {
+    width: 90%;
+  }
+
+  .head_line > h2 {
+    font-size: 50px;
+  }
+}
+/* !----------------------------------------------- Large -------------------------------- */
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  /* ----------------- Navbar  */
+  .navbar {
+    margin-bottom: 80px;
+  }
+
+  .navbar > div > h3 {
+    font-size: 38px;
+  }
+
+  .navbar > div > nav > ul {
+    width: 300px;
+  }
+
+  /* ----------------------- Heading */
+
+  .head_line {
+    width: 90%;
+  }
+
+  .head_line > h2 {
+    font-size: 55px;
+  }
+}
