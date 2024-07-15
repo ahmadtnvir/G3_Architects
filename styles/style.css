@@ -101,6 +101,7 @@ button {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-bottom: 130px;
 }
 /* ------------- Feature */
 .feature_section {
@@ -266,6 +267,49 @@ button {
   font-weight: 600;
 }
 
+/* -------------------------- sponsored_section */
+.sponsored_section {
+  width: 100%;
+}
+
+.sponsor_heading {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.sponsor_heading > h3 {
+  color: #131313;
+  font-size: 45px;
+  font-weight: 700;
+  margin-bottom: 24px;
+}
+
+.sponsor_list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sponsor_list > div > img {
+  width: 100%;
+}
+
+/* -------------------------------- Footer -------------------------------- */
+footer {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff4e7;
+  padding: 40px 0;
+  color: #424242;
+  font-size: 20px;
+  border-radius: 8px;
+  margin-bottom: 130px;
+}
 /* !----------------------------------------------- SMALL -------------------------------- */
 @media screen and (max-width: 576px) {
   button {
@@ -360,6 +404,29 @@ button {
     flex-wrap: wrap;
     gap: 20px;
   }
+
+  /* -------------------------- sponsored_section */
+
+  .sponsor_heading {
+    width: 90%;
+  }
+
+  .sponsor_heading > h3 {
+    font-size: 32px;
+  }
+
+  .sponsor_list {
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+  }
+
+  /* -------------------------------- Footer -------------------------------- */
+  footer {
+    text-align: center;
+    padding: 20px;
+  }
 }
 /* !----------------------------------------------- Medium -------------------------------- */
 
@@ -448,6 +515,29 @@ button {
   .facts_list {
     flex-wrap: wrap;
     gap: 20px;
+  }
+
+  /* -------------------------- sponsored_section */
+
+  .sponsor_heading {
+    width: 90%;
+  }
+
+  .sponsor_heading > h3 {
+    font-size: 32px;
+  }
+
+  .sponsor_list {
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+  }
+
+  /* -------------------------------- Footer -------------------------------- */
+  footer {
+    text-align: center;
+    padding: 20px;
   }
 }
 /* !----------------------------------------------- Large -------------------------------- */
@@ -539,5 +629,28 @@ button {
   .facts_list {
     flex-wrap: wrap;
     gap: 20px;
+  }
+
+  /* -------------------------- sponsored_section */
+
+  .sponsor_heading {
+    width: 90%;
+  }
+
+  .sponsor_heading > h3 {
+    font-size: 32px;
+  }
+
+  .sponsor_list {
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+  }
+
+  /* -------------------------------- Footer -------------------------------- */
+  footer {
+    text-align: center;
+    padding: 20px;
   }
 }
