@@ -41,7 +41,6 @@ button {
   justify-content: space-between;
   align-items: center;
   margin-bottom: 116px;
-  /* padding: 0 20px; */
 }
 
 .navbar > div > h3 {
@@ -99,9 +98,11 @@ button {
   width: 90%;
   margin: 0 auto;
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  /* align-items: center; */
+  align-items: center;
 }
+/* ------------- Feature */
 .feature_section {
   width: 90%;
   display: flex;
@@ -151,6 +152,76 @@ button {
   margin-bottom: 32px;
 }
 
+/* ------------------ List_of_feature_section */
+.list_of_feature_section {
+  display: flex;
+  justify-content: center;
+  gap: 54px;
+}
+
+.list_left,
+.list_right {
+  flex: 1;
+}
+
+.list_left_heading {
+  margin-bottom: 30px;
+}
+
+.list_left_heading > h3 {
+  color: #131313;
+  font-size: 45px;
+  font-weight: 700;
+  border-left: 2px solid #ff900e;
+  padding-left: 30px;
+  margin-bottom: 24px;
+}
+
+.list_card {
+  padding: 30px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+  margin-bottom: 20px;
+}
+
+.list_card > span {
+  color: #131313;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.list_right {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+
+.list_right > img {
+  width: 90%;
+  height: 95%;
+}
+
+.experience {
+  background-color: #ff900e;
+  color: #ffffff;
+  font-size: 25px;
+  font-weight: 500;
+  line-height: 40px;
+  text-align: center;
+  padding: 30px 28px;
+  border-radius: 8px;
+  bottom: 0;
+  left: 0;
+}
+
+.experience > h2 > span {
+  font-size: 65px;
+  font-weight: 700;
+  line-height: 70px;
+}
+
 /* !----------------------------------------------- SMALL -------------------------------- */
 @media screen and (max-width: 576px) {
   button {
@@ -191,10 +262,44 @@ button {
     grid-template-columns: repeat(1, 1fr);
     gap: 20px;
   }
+
+  .img_container > div > img {
+    width: 100%;
+  }
+
   .first,
   .second,
   .third {
     font-size: 23px;
+  }
+
+  /* --------------------- List_of_feature_section */
+  .list_of_feature_section {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .list_left_heading > h3 {
+    font-size: 32px;
+  }
+
+  .list_right {
+    align-items: center;
+  }
+
+  .list_right > img {
+    width: 100%;
+  }
+
+  .experience {
+    font-size: 20px;
+    line-height: 20px;
+    padding: 15px 14px;
+  }
+
+  .experience > h2 > span {
+    font-size: 40px;
+    line-height: 50px;
   }
 }
 /* !----------------------------------------------- Medium -------------------------------- */
@@ -226,17 +331,49 @@ button {
   /* --------------- Feature */
   .feature_section {
     flex-direction: column;
-    /* margin-bottom: 100px; */
   }
 
   .img_container {
     grid-template-columns: repeat(1, 1fr);
-    /* gap: 20px; */
   }
+
+  .img_container > div > img {
+    width: 100%;
+  }
+
   .first,
   .second,
   .third {
     font-size: 30px;
+  }
+
+  /* --------------------- List_of_feature_section */
+  .list_of_feature_section {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .list_left_heading > h3 {
+    font-size: 32px;
+  }
+
+  .list_right {
+    align-items: center;
+  }
+
+  .list_right > img {
+    width: 100%;
+  }
+
+  .experience {
+    font-size: 20px;
+    line-height: 20px;
+    padding: 15px 14px;
+  }
+
+  .experience > h2 > span {
+    font-size: 40px;
+    line-height: 50px;
   }
 }
 /* !----------------------------------------------- Large -------------------------------- */
@@ -274,11 +411,44 @@ button {
 
   .img_container {
     grid-template-columns: repeat(2, 1fr);
-    /* gap: 20px; */
   }
+
+  .img_container > div > img {
+    width: 100%;
+  }
+
   .first,
   .second,
   .third {
     font-size: 36px;
+  }
+
+  /* --------------------- List_of_feature_section */
+  .list_of_feature_section {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .list_left_heading > h3 {
+    font-size: 32px;
+  }
+
+  .list_right {
+    align-items: center;
+  }
+
+  .list_right > img {
+    width: 100%;
+  }
+
+  .experience {
+    font-size: 20px;
+    line-height: 20px;
+    padding: 15px 14px;
+  }
+
+  .experience > h2 > span {
+    font-size: 40px;
+    line-height: 50px;
   }
 }
