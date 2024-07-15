@@ -157,6 +157,7 @@ button {
   display: flex;
   justify-content: center;
   gap: 54px;
+  margin-bottom: 130px;
 }
 
 .list_left,
@@ -220,6 +221,49 @@ button {
   font-size: 65px;
   font-weight: 700;
   line-height: 70px;
+}
+
+/* ---------------------- fact_section */
+.fact_section {
+  width: 100%;
+  margin-bottom: 180px;
+}
+
+.fact_heading {
+  width: 50%;
+  margin-bottom: 100px;
+}
+
+.fact_heading > h3 {
+  color: #131313;
+  font-size: 45px;
+  font-weight: 700;
+  margin-bottom: 24px;
+}
+
+.facts_list {
+  display: flex;
+  justify-content: space-around;
+  /* align-items: center; */
+}
+
+.fact {
+  border: 1px solid #ff900e;
+  border-radius: 8px;
+  padding: 45px 36px;
+  text-align: center;
+}
+
+.fact > h4 {
+  color: #424242;
+  font-size: 45px;
+  font-weight: 600;
+}
+
+.fact > p {
+  color: #727272;
+  font-size: 20px;
+  font-weight: 600;
 }
 
 /* !----------------------------------------------- SMALL -------------------------------- */
@@ -301,6 +345,21 @@ button {
     font-size: 40px;
     line-height: 50px;
   }
+
+  /* ---------------------- fact_section */
+
+  .fact_heading {
+    width: 100%;
+  }
+
+  .fact_heading > h3 {
+    font-size: 32px;
+  }
+
+  .facts_list {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
 }
 /* !----------------------------------------------- Medium -------------------------------- */
 
@@ -374,6 +433,21 @@ button {
   .experience > h2 > span {
     font-size: 40px;
     line-height: 50px;
+  }
+
+  /* ---------------------- fact_section */
+
+  .fact_heading {
+    width: 100%;
+  }
+
+  .fact_heading > h3 {
+    font-size: 32px;
+  }
+
+  .facts_list {
+    flex-wrap: wrap;
+    gap: 20px;
   }
 }
 /* !----------------------------------------------- Large -------------------------------- */
@@ -450,5 +524,20 @@ button {
   .experience > h2 > span {
     font-size: 40px;
     line-height: 50px;
+  }
+
+  /* ---------------------- fact_section */
+
+  .fact_heading {
+    width: 100%;
+  }
+
+  .fact_heading > h3 {
+    font-size: 32px;
+  }
+
+  .facts_list {
+    flex-wrap: wrap;
+    gap: 20px;
   }
 }
